@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.logo {
+    color: #a52121;
+    font-size: 3.5vh;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+}
+
+.display-logo {
+    display: flex;
+    align-items: center;
+}
+
+.red-logo {
+    width: 10px;
+    height: 45px;
+    background-color: #a52121;
+}
+
+#icon-user {
+    font-size: 5vh;
+    font-style: normal;
+}
+
+.btn-empre {
+    color: #ffff;
+    background: #a52121;
+    padding: 5px 5px;
+    border: 2px solid #a52121;
+    border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-empre:hover {
+    color: #a52121;
+    background: transparent;
+}
+
+.log {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vh;
+}
+
+.legend-contact {
+    font-size: 3.5vh;
+    color: rgb(126, 122, 122)
+}
+
+.bg-footer {
+    background: #444444;
+}
+
+.icon-social-redes-footer {
+    color: #9c9696;
+}
+
+.icon-social-redes-footer a:hover {
+    color: #b13f3f;
+}
+
+.vagas {
+    color: black;
+}
+
+.title {
+    background: #f3ecec;
+    padding: 20px 20px;
+}
+
+.detlh-vaga {
+    font-size: 2.3vh;
+}
+
+#arquivo {
+    font-family: 'Roboto', sans-serif;
+}
+
+.sub-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5vh;
+}
+
+.info {
+    padding: 10px 10px;
+    background: #fff;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 15px #8b8a8a;
+}
+
+.infos {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vh;
+}
+
+.infos2 {
+    color: rgb(104, 104, 104);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vh;
+}
+
+.descrição {
+    color: rgb(53, 53, 53);
+    font-size: 2.5vh;
+}
+
+.bg-nav-cad {
+    background: #ffffff;
+    border-right: solid 1px #8f8c8c;
+    border-bottom: solid 1px #8f8c8c;
+    border-top: solid 1px #8f8c8c;
+}
+
+.nav-cad {
+    border-right: solid 1px #8f8c8c;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #151515;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.text-footer {
+    font-size: 2vh;
+    color: #fff;
+}
+
+.nav-link {
+    position: relative;
+    color: black;
+    font-size: 3vh;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #a52121;
+    border-radius: 2px;
+    z-index: -1;
+    transition: height 0.3s ease-in-out, top 0.3s ease-in-out;
+    transform-origin: bottom;
+}
+
+.nav-link:hover:before {
+    top: 0;
+    /* Move o elemento para cima quando passa o mouse */
+    height: 100%;
+    /* Aumenta a altura para cobrir o botão */
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.title-curso {
+    padding-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.forms-container {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.form {
+    display: none;
+}
+
+.active-form {
+    display: block;
+}
+
+.alert-danger {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 3px;
+}
+
+.alert-dark {
+    background: #d6d8d9;
+    border: 1px solid #c6c8ca;
+    border-radius: 3px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1vh 1vh;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    border-radius: 4px;
+    padding: 1vh 1vh;
+}
+
+.img-teste {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.divisa {
+    width: 3px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #d4d4d4;
+}
