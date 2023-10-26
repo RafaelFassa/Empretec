@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login|Adm</title>
+    <link rel="shortcut icon" href="assets/img/checklist.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/SweetAlert2/dist/sweetalert2.css">
+    <link rel="stylesheet" href="assets/css/module.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row centered">
+            <div class="col-12 col-sm-4 col-md-4">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <h4 class="text-primary text-center">
+                            Login do Sistema
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="form-login" action="" method="post">
+                            <div class="form-group">
+                                <label>Login</label>
+                                <input id="LOGIN" class="form-control" type="text" name="LOGIN">
+                            </div>
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <input id="SENHA" class="form-control" type="password" name="SENHA">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-lg btn-block btn-login"> Entrar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/jquery-3.6.4.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/vendor/SweetAlert2/dist/sweetalert2.all.js"></script>
+    <script src="frontend/controllers/Login.js"></script>
+
+</body>
+
+</html>

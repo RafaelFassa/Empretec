@@ -4,7 +4,7 @@ include('../conexao/conn.php');
 
 try {
     // Consulta para buscar informações das empresas
-    $sql = "SELECT nome_do_cargo, formacao_necessaria FROM empregos";
+    $sql = "SELECT nome_do_cargo, formacao_necessaria, codigo FROM empregos";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
 
