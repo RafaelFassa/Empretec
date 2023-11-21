@@ -1,3 +1,23 @@
+function mostrarTodosEmpregos() {
+    fetch("api/models/upload_empregos.php")
+        .then(response => response.json())
+        .then(empregos => {
+            const containerEmpregos = document.getElementById("todos-content");
+            let htmlEmpregos = "";
+
+            for (let i = 0; i < empregos.length; i++) {
+                const emprego = empregos[i];
+                htmlEmpregos += criarConteudoEmprego(emprego);
+            }
+
+            containerEmpregos.innerHTML = htmlEmpregos;
+        })
+        .catch(error => console.error("Erro ao buscar informações dos empregos:", error));
+}
+
+// Chamar a função para mostrar todos os empregos ao carregar a página
+mostrarTodosEmpregos();
+
 // Função para criar uma guia de curso
 function criarGuiaCurso(curso) {
     return `
@@ -8,7 +28,9 @@ function criarGuiaCurso(curso) {
 function criarConteudoCurso(curso) {
     return `
     <div class="tab-pane fade" id="${curso.codigo}-content" role="tabpanel" aria-labelledby="${curso.codigo}-tab">
+    <fieldset class="title-curso mt-3">
         <div id="${curso.curso}-content-info" class="card-deck"></div>
+    </fieldset>
     </div>`;
 }
 
@@ -22,7 +44,7 @@ function criarConteudoEmprego(emprego) {
             <p class="card-text">É com grande prazer que [Nome da Empresa] convida você a se juntar à nossa equipe como ${emprego.nome_do_cargo}.<br>
             <br>Estamos entusiasmados em oferecer a você a oportunidade de desenvolver suas habilidades e conhecimentos na área de ${emprego.nome_do_cargo} enquanto colabora conosco em projetos empolgantes.</p>
             <br>
-            <a href="detalhes_emprego.html?codigo=${emprego.codigo}" class="card-link btn-empre">Olhar mais de perto</a>
+            <a href="form-envio.html" class="card-link btn-empre">Olhar mais de perto</a>
         </div>
     </div>
  </div>`;

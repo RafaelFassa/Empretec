@@ -45,16 +45,3 @@ body {
 .logo2 {
     font-size: 3.5vh;
 }
-
-.centered {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.btn-logout {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 10px;
-    padding: 10px;
-}
